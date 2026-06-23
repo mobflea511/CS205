@@ -1,0 +1,28 @@
+## Pseudocode – Grocery Tracking Program
+
+START
+
+CREATE empty grocery list (dictionary/map)
+
+DISPLAY menu
+
+WHILE user does not choose exit DO
+ SHOW options: add item, view items, exit
+
+ IF user selects add item THEN
+  GET item name
+  IF item exists in list THEN
+   INCREASE count by 1
+  ELSE
+   ADD item with count = 1
+
+ IF user selects view items THEN
+  FOR each item in list
+   DISPLAY item and count
+
+ IF user selects exit THEN
+  END program
+
+END WHILE
+
+END

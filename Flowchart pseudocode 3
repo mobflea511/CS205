@@ -1,0 +1,32 @@
+## Pseudocode – Hourly Pay Calculator with Overtime
+
+START
+
+SET hourlyRate = 20
+SET overtimeRate = 30
+
+INPUT totalHoursWorked
+
+IF totalHoursWorked <= 40 THEN
+ regularPay = totalHoursWorked * hourlyRate
+ overtimePay = 0
+ overtimeHours = 0
+
+ELSE
+ regularHours = 40
+ overtimeHours = totalHoursWorked - 40
+ regularPay = regularHours * hourlyRate
+ overtimePay = overtimeHours * overtimeRate
+
+END IF
+
+totalPay = regularPay + overtimePay
+
+DISPLAY "Hours worked:", totalHoursWorked
+DISPLAY "Regular hours:", regularHours (or totalHours if <= 40)
+DISPLAY "Overtime hours:", overtimeHours
+DISPLAY "Regular pay:", regularPay
+DISPLAY "Overtime pay:", overtimePay
+DISPLAY "Total pay:", totalPay
+
+END
